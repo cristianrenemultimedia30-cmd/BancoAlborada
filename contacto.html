@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Banco Alborada</title>
+<meta name="description" content="Banco Alborada: cuentas, tarjetas, créditos e inversiones con banca digital segura.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=Sora:wght@600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="index.html"><span class="mark">A</span>Banco Alborada</a>
+<nav aria-label="Principal"><ul id="menu"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="productos.html">Productos</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html" aria-current="page">Contacto</a></li></ul></nav>
+<div class="tools"><button class="icon-btn" id="tema-btn" aria-pressed="false">🌙 Oscuro</button>
+<button class="icon-btn" id="menu-btn" aria-expanded="false" aria-controls="menu">☰ Menú</button></div>
+</div></header>
+<main>
+<div class="wrap page-title"><h1>Contacto</h1><p>Déjanos tus datos y un asesor te llamará en menos de 24 horas.</p></div>
+<section><div class="wrap"><div class="split">
+<form id="form-contacto" novalidate>
+<div><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name"><span class="err" id="err-nombre"></span></div>
+<div><label for="documento">Documento de identidad</label><input id="documento" name="documento" inputmode="numeric"><span class="err" id="err-documento"></span></div>
+<div><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email"><span class="err" id="err-correo"></span></div>
+<div><label for="telefono">Teléfono (opcional)</label><input id="telefono" name="telefono" type="tel" autocomplete="tel"><span class="err" id="err-telefono"></span></div>
+<div><label for="asunto">Me interesa</label><select id="asunto" name="asunto"><option>Abrir una cuenta</option><option>Solicitar una tarjeta</option><option>Pedir un crédito</option><option>Invertir mis ahorros</option><option>Otro tema</option></select></div>
+<div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5"></textarea><span class="err" id="err-mensaje"></span></div>
+<button class="btn" type="submit">Enviar mensaje</button><p id="estado" role="status"></p></form>
+<aside><h2>Otras formas de contactarnos</h2><ul class="info"><li>📞 Línea nacional: 601 555 0100</li><li>✉️ servicio@bancoalborada.example</li><li>🕗 Lunes a viernes, 8:00 a. m. a 5:00 p. m.</li><li>🏢 Oficina principal: Avenida Central 45-20, piso 1</li><li>🚨 Tarjeta perdida: 601 555 0199 (24 horas)</li></ul></aside>
+</div></div></section>
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><h3>Banco Alborada</h3><p>Acompañamos a personas y empresas con productos claros y banca digital segura.</p></div>
+<div><h3>Navegación</h3><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="productos.html">Productos</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+<div><h3>Atención</h3><ul><li>Línea nacional: 601 555 0100</li><li>servicio@bancoalborada.example</li><li>Lunes a viernes, 8:00 a. m. a 5:00 p. m.</li></ul></div>
+</div><small>© 2026 Banco Alborada. Sitio de ejemplo con fines educativos; los datos y las tasas no son reales.</small></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Banco Alborada</title>
+<meta name="description" content="Banco Alborada: cuentas, tarjetas, créditos e inversiones con banca digital segura.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&family=Sora:wght@600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="index.html"><span class="mark">A</span>Banco Alborada</a>
+<nav aria-label="Principal"><ul id="menu"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="productos.html">Productos</a></li><li><a href="servicios.html" aria-current="page">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
+<div class="tools"><button class="icon-btn" id="tema-btn" aria-pressed="false">🌙 Oscuro</button>
+<button class="icon-btn" id="menu-btn" aria-expanded="false" aria-controls="menu">☰ Menú</button></div>
+</div></header>
+<main>
+<div class="wrap page-title"><h1>Servicios</h1><p>Simula tu crédito y conoce los canales con los que puedes hacer tus trámites.</p></div>
+<section><div class="wrap"><h2>Simulador de crédito</h2><p class="lead">Mueve los controles y mira tu cuota al instante. El resultado es una estimación.</p>
+<div class="calc"><div class="panel">
+<div><label for="tipo">Tipo de crédito</label><select id="tipo"><option value="1.6">Libre inversión (1,6 % mensual)</option><option value="1.2">Vehículo (1,2 % mensual)</option><option value="0.9">Vivienda (0,9 % mensual)</option></select></div>
+<div><div class="out"><label for="monto">Monto</label><span id="v-monto"></span></div><input id="monto" type="range" min="1000000" max="100000000" step="500000" value="20000000"></div>
+<div><div class="out"><label for="plazo">Plazo</label><span id="v-plazo"></span></div><input id="plazo" type="range" min="6" max="72" step="6" value="36"></div></div>
+<div class="panel res"><p>Tu cuota mensual sería</p><span class="big" id="r-cuota"></span><div class="out"><span>Total a pagar</span><span id="r-total"></span></div><div class="out"><span>Intereses</span><span id="r-int"></span></div><p>Sujeto a estudio de crédito. No incluye seguros ni costos adicionales.</p></div></div></div></section>
+<section><div class="wrap"><h2>Atiende tus trámites donde quieras</h2><br><div class="grid"><article class="card"><div class="ico">📱</div><h3>App móvil</h3><p>Transferencias, pagos de servicios y bloqueo de tarjetas las 24 horas.</p></article><article class="card"><div class="ico">🏧</div><h3>Cajeros y corresponsales</h3><p>Más de 300 puntos para retirar y consignar cerca de ti.</p></article><article class="card"><div class="ico">📞</div><h3>Línea telefónica</h3><p>Asesores para resolver tus dudas de lunes a viernes.</p></article></div></div></section>
+<section><div class="wrap"><h2>Cómo cuidamos tu seguridad</h2><br><div class="grid"><article class="card"><div class="ico">🔒</div><h3>Doble verificación</h3><p>Cada ingreso y cada pago grande se confirman con un código.</p></article><article class="card"><div class="ico">🔔</div><h3>Alertas al instante</h3><p>Te avisamos por mensaje cada vez que usas tu tarjeta.</p></article><article class="card"><div class="ico">🛡️</div><h3>Contra fraudes</h3><p>Nunca pedimos tu clave, tu código o tu CVV por llamada o mensaje.</p></article></div></div></section>
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><h3>Banco Alborada</h3><p>Acompañamos a personas y empresas con productos claros y banca digital segura.</p></div>
+<div><h3>Navegación</h3><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="productos.html">Productos</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+<div><h3>Atención</h3><ul><li>Línea nacional: 601 555 0100</li><li>servicio@bancoalborada.example</li><li>Lunes a viernes, 8:00 a. m. a 5:00 p. m.</li></ul></div>
+</div><small>© 2026 Banco Alborada. Sitio de ejemplo con fines educativos; los datos y las tasas no son reales.</small></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
